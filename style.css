@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
 
 body {
-  background-color: #3d1a24;
+  background-color: #1f1c10;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -12,13 +12,17 @@ body {
 .content {
   display: flex;
   flex-flow: row wrap;
-  background-color: #162a24;
+  background-color: #101f1c;
   color: white;
+  padding: 30px 30px;
+  border-radius: 25px;
+  box-shadow: 5px 10px #00000071;
 }
 
 .character-intro {
   text-align: center;
-  padding: 10px;
+  padding: 0.7em;
+  margin: 0.7em;
   background-color: #00000071;
   color: #fff;
   line-height: 20px;
@@ -34,6 +38,26 @@ body {
   padding: 1em;
 }
 
+input[type="text"],
+textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dddddd;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #a0ff6f;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #a0ff6f;
+}
+
 .input-content {
   margin: 0.75em;
 }
@@ -41,7 +65,8 @@ body {
 .btn-group {
   display: flex;
   justify-content: space-around;
-  padding: 1.5em;
+  padding: 0.3em;
+  margin: 0.3em;
 }
 
 .btn-submit {
@@ -55,14 +80,14 @@ button[type="submit"] {
   color: white;
   font-weight: 400;
   font-size: 1.1em;
-  border: 1.5px solid white;
+  border: 1.5px solid #a0ff6f;
   border-radius: 5px;
   padding: 5px 25px;
   margin: 0px 90px;
 }
 
 button[type="submit"]:hover {
-  background-color: white;
+  background-color: #a0ff6f;
   color: black;
 }
 
@@ -70,4 +95,42 @@ button[type="submit"]:hover {
   display: flex;
   justify-content: center;
   margin: 0.1em;
+}
+
+.path {
+  border: 2px solid white;
+  margin: 1em;
+  padding: 1em;
+}
+
+.path-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: 400;
+  font-size: 1.1em;
+  padding: 5px 20px;
+  margin: 0px 40px;
+}
+
+.path-button:hover {
+  background-color: #a0ff6f;
+  color: black;
+  border-radius: 3px;
+}
+
+.enrolled-in {
+  display: flex;
+  padding: 0.24em;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #a0ff6f;
+  font-weight: 700;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline #a0ff6f;
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap");
+
 body {
   background-color: #3d1a24;
   display: flex;
@@ -5,6 +7,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  font-family: Prompt;
 }
 .content {
   display: flex;
@@ -15,11 +18,10 @@ body {
 
 .character-intro {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #00000071;
   color: #fff;
-  line-height: 30px;
-  font-weight: bold;
+  line-height: 20px;
   border-radius: 5px;
   font-family: "Prompt", sans-serif;
 }
@@ -29,7 +31,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0.75em;
+  padding: 1em;
 }
 
 .input-content {
@@ -39,13 +41,29 @@ body {
 .btn-group {
   display: flex;
   justify-content: space-around;
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .btn-submit {
   display: flex;
   justify-content: center;
   margin: 0.1em;
+}
+
+button[type="submit"] {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: 400;
+  font-size: 1.1em;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  padding: 5px 25px;
+  margin: 0px 90px;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+  color: black;
 }
 
 .choose-path {

@@ -30,23 +30,25 @@
           <div class="input-content">
             <div class="input">
               <label for="character-name"
-                >What should we call you baby Shinobi?</label
+                >What shall we call you baby Shinobi?</label
               >
               <input
                 type="text"
                 name="character-name"
                 id="character-name"
-                placeholder="Character Name"
+                placeholder="Character Name*"
                 required
               />
             </div>
             <div class="input">
-              <label for="address">What is your assigned safe location?</label>
+              <label for="address"
+                >We need a safe location to contact you!</label
+              >
               <input
                 type="text"
                 name="Address"
                 id="Address"
-                placeholder="Address"
+                placeholder="Address*"
                 required
               />
             </div>
@@ -56,33 +58,53 @@
                 type="text"
                 name="secret-key"
                 id="secret-key"
-                placeholder="Secret Key"
+                placeholder="Secret Key*"
                 required
               />
             </div>
             <div class="input">
-              <label for="confirm-secret-key">Confirm the Secret Key*</label>
+              <label for="confirm-secret-key">Confirm the secret key</label>
               <input
                 type="text"
                 name="confirm-secret-key"
                 id="confirm-secret-key"
-                placeholder="Confirm Secret Key"
+                placeholder="Confirm Secret Key*"
                 required
               />
             </div>
-            <div class="choose-path">What path do you pursue?</div>
-            <div class="btn-group">
-              <button class="path-button" id="Genjutsu">Genjutsu</button>
-              <button class="path-button" id="Ninjutsu">Ninjutsu</button>
-              <button class="path-button" id="Taijutsu">Taijutsu</button>
-            </div>
-            <div class="btn-submit">
-              <button type="submit">Submit</button>
+            <div class="path">
+              <div class="choose-path">What is your Jutsu proficiency?</div>
+              <div class="btn-group">
+                <input
+                  type="radio"
+                  name="jutsu"
+                  class="path-button"
+                  id="Genjutsu"
+                  value="Genjutsu"
+                />Genjutsu
+                <input
+                  type="radio"
+                  name="jutsu"
+                  class="path-button"
+                  id="Ninjutsu"
+                />Ninjutsu
+                <input
+                  type="radio"
+                  name="jutsu"
+                  class="path-button"
+                  id="Taijutsu"
+                />Taijutsu
+              </div>
+              <div class="btn-submit">
+                <button type="submit">Submit</button>
+              </div>
             </div>
           </div>
         </form>
         <div class="enrolled-in">
-          <p>What do you mean you are already enrolled? Get in class!</p>
+          <p>
+            What do you mean you are already in the Anbu Corps? Show us proof!
+          </p>
         </div>
       </div>
     </div>

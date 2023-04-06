@@ -1,0 +1,55 @@
+body {
+  background-color: #3d1a24;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #162a24;
+  color: white;
+}
+
+.character-intro {
+  text-align: center;
+  padding: 20px;
+  background-color: #00000071;
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: "Prompt", sans-serif;
+}
+
+.input {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0.75em;
+}
+
+.input-content {
+  margin: 0.75em;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0.1em;
+}
+
+.choose-path {
+  display: flex;
+  justify-content: center;
+  margin: 0.1em;
+}

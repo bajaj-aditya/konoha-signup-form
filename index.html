@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shinobi Academy Form!</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="left">
+        <div class="picture">
+          <img
+            src="assets/sasuke-konoha.gif"
+            alt="Sasuke is out on a mission, choose a path."
+          />
+        </div>
+      </div>
+      <div class="right">
+        <div class="character-intro">
+          <p>
+            You are Sasuke's and Karin's bastard son, with Uchiha and Uzumaki
+            blood <br />in your veins, you are bound to achieve great heights!
+          </p>
+          <p>Introduce yourself to the Anbu!</p>
+        </div>
+        <form action="#">
+          <div class="input-content">
+            <div class="input">
+              <label for="character-name"
+                >What should we call you baby Shinobi?</label
+              >
+              <input
+                type="text"
+                name="character-name"
+                id="character-name"
+                placeholder="Character Name"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="address">What is your assigned safe location?</label>
+              <input
+                type="text"
+                name="Address"
+                id="Address"
+                placeholder="Address"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="secret-key">The secret key passed down to you?</label>
+              <input
+                type="text"
+                name="secret-key"
+                id="secret-key"
+                placeholder="Secret Key"
+                required
+              />
+            </div>
+            <div class="input">
+              <label for="confirm-secret-key">Confirm the Secret Key*</label>
+              <input
+                type="text"
+                name="confirm-secret-key"
+                id="confirm-secret-key"
+                placeholder="Confirm Secret Key"
+                required
+              />
+            </div>
+            <div class="choose-path">What path do you pursue?</div>
+            <div class="btn-group">
+              <button class="path-button" id="Genjutsu">Genjutsu</button>
+              <button class="path-button" id="Ninjutsu">Ninjutsu</button>
+              <button class="path-button" id="Taijutsu">Taijutsu</button>
+            </div>
+            <div class="btn-submit">
+              <button type="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+        <div class="enrolled-in">
+          <p>What do you mean you are already enrolled? Get in class!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
